@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">    
+<head>
+    <title>Tráfego do luquinhas</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <!--View Port-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="./styles/global.css">    
+        <link rel="stylesheet" type="text/css" href="./styles/home.css">  
+        <link rel="stylesheet" type="text/css" href="./styles/modal.css"> 
+        
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">  
+
+        <!--SCRIPTS-->
+        <script type="text/javascript" src="../script/modal.js"></script>
+        <script type="text/javascript" src="../script/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/banner-lading.png">
+        </header>
+
+        <main>
+            <h2>DEIXE A EQUIPE DO LUQUINHAS RODAR SEU TRAFEGO!</h2>
+            <p>Bora ter ROI, bruto?  Se você tem interesse em ter os anúncios de seus negócios gerenciados por mim e minha equipe,
+                 é só preencher o formulário abaixo para entrar em nossa lista de espera e aguardar nosso contato.<br> Tamo junto!</p>
+
+            <form action="./script/project.php" class="form" method="POST" id="form">
+                <label>Nome completo *</label>
+                <input type="text" name="nome_completo" placeholder="Informe seu nome completo" required class="inputname">
+
+                <label>Você sabe como funciona o Tráfego Pago?*</label>
+                <input type="text" name="pergunta_funciona" placeholder="Informe se sim ou não" required class="input-padroes">
+
+                <label>Email *</label>
+                <input type="email" name="email" placeholder="Informe o seu principal E-mail" required class='input-padroes'>
+
+                <label>WhatsApp *</label>
+                <input type="number" name="celular" placeholder="Digite seu WhatsApp" required class='inputwhats'>
+
+                <label>Nos informe por favor o nome da sua empresa:*</label>
+                <input type="text" name="nome_empresa" placeholder="Informe o nome/razão social da sua empresa" required class="inputs-padroes">
+
+                <label>Qual é o seu nicho de atuação?*</label>
+                <input type="text" name="atuacao_empresa" placeholder="Informe o nicho de atuação do seu negócio" required class="inputs-padroes">
+
+                <label>Qual é o Instagram da sua empresa?*</label>
+                <input type="text" name="instagram_empresa" placeholder="Informe o @ do seu negócio no instagram " required class="inputinsta">
+
+                <label>Se seu negócio já possui um site, nos informe qual é:</label>
+                <input type="text" name="site_empresa" placeholder="Informe o site do negócio" required class="inputs-padroes">
+
+                <label>Qual é o seu objetivo com o Tráfego Pago?</label>
+                <textarea name="pergunta_objetivo" required class="inputs-padroes"> </textarea>
+
+                <label>Você já investe em Tráfego Pago?*</label>
+                <textarea name="pergunta_investe_trafego" required class="inputs-padroes"></textarea>
+
+                <label>E qual é o seu investimento mensal por mês? (caso não invista ainda, não precisa responder)</label>
+                <input type="text" name="pergunta_valor_mensal" placeholder="Informe o valor investido por mês" class="inputs-padroes">
+
+                <label>Valor disponível de investimento por mês*</label>
+                <input type="text" name="pergunta_valor_disponivel" placeholder="Valor disponível de investimento por mês" required class="inputs-padroes">
+
+                <label>Se você já tem faturamento, informe o seu faturamento mensal*</label>
+                <input type="text" name="pergunta_faturamento_mensal" placeholder="Se você já tem faturamento, informe o faturamento mensal" required class="inputs-padroes">
+
+                <label>Qual valor você pretende investir em Tráfego Pago?*</label>
+                <input type="text" name="pergunta_valor_investir" placeholder="Informe o valor que você pretende investir por mês" required class="inputtrafego">
+
+                <button id="button" onclick="submitInfos()">FINALIZAR E ENVIAR MINHA SOLICITAÇÃO</button>
+                
+            </form>
+
+            <hr>
+
+            
+        </main>
+
+        <footer>
+            <a href="https://www.instagram.com/lucaspassingui/">
+                <img src="./img/logo-insta.png">
+            </a>
+            
+            <p>@lucaslindão © All rights reserved</p>
+            <div class="admin-acess">
+                <img src="./img/padlock.png" onclick="openModal()">
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Acesso de administrador</h2>
+            <p>Coloque as informações necessárias, para ter acesso aos dados</p>
+            <form action="#" method="POST">
+                <label class="sr-only" for-id="password">Digite sua senha admin</label>
+                <input type="password" id="password" name="password" placeholder="Digite a senha" />
+
+                <div class="buttons">
+                    <div class="button cancel" onclick="closeModal()">Cancelar</div>
+                    <button class="green" type="submit">Acessar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>    
+
+
+</html>

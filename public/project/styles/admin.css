@@ -1,0 +1,67 @@
+.container {
+    width: 1600px;
+    height: 100vh;
+    margin: 0 auto;
+    
+    background: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 6rem;
+
+}
+
+table {
+    width: 100%;
+    padding: 10rem;
+
+    margin-top: 3rem;
+    border-collapse: collapse;
+}
+
+
+th{
+    border: 2px solid #000;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 0.5rem;
+    
+    font-family: "Inherit";
+    font-size: 1.5rem;
+
+}
+
+tr {
+    border: 1px solid red;
+}
+
+
+
+.container a {
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    background: #646464;
+    color: white;
+    border-radius: 0.5rem;
+
+    padding: 0.8rem;
+    margin: 1rem 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 560px;
+    }
+    a {
+        padding: 10rem;
+    }
+}

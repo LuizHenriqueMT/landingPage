@@ -1,0 +1,14 @@
+{
+    "name": "luiz/teste",
+    "description": "This command will guide you through creating your composer.json config.",
+    "require": {
+    	"phpmailer/phpmailer": "^6.5"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/",
+            "src\\": "src/"
+        }
+    }
+}

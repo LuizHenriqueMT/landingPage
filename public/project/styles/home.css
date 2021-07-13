@@ -1,0 +1,208 @@
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+ header img {
+     width: 100%;
+     margin: 2rem 0;
+ }
+
+ /*Main*/
+
+ main {
+     background-color: #FFF;
+     padding: 2rem;
+     box-shadow: 0px 5px 25px rgb(0 0 0 / 15%);
+ }
+
+ h2 {
+     text-align: center;
+     font-size: 3.5rem;
+     font-family: "Open Sans";
+     
+     margin-bottom: 2rem;
+ }
+
+ p {
+     text-align: center;
+     font-size: 2rem;
+     margin-bottom: 4rem;
+ }
+
+ form {
+     margin: 0 auto;
+     width: 60%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     text-align: flex-start;
+     /* border: 1px solid red; */
+ }
+ 
+ label {
+     width: 100%;
+     margin-bottom: 0.5rem;
+     font-size: 1.5rem;
+     font-weight: 500;
+     font-family: "Open Sans"
+ }
+
+
+ input {
+    width: 100%;
+    height: 2.75rem;
+
+    border:1px solid grey ;
+    border-radius: 0.3rem;
+
+    outline: none;
+    padding: 0 0.6rem;
+    margin-bottom: 2rem;
+ }
+
+ input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;   
+}
+
+input::placeholder {
+    font-family: inherit;
+}
+
+ textarea {
+    resize: none;
+    width: 100%;
+    height: 8rem;
+
+    margin-bottom: 2rem;
+    outline: none;
+    padding: 0.6rem 0.6rem;
+
+    border:1px solid grey ;
+    border-radius: 0.3rem;
+
+}
+
+ form button {
+     background-color: #333;
+     color: #fff;
+    
+    -webkit-appearance: none;
+    padding: 1.5rem;
+    border-radius: 6rem;
+    border: none;
+    width: 100%;
+    
+    font-family: "Open Sans";
+    cursor: pointer;
+    margin-top: 1rem;
+
+ }
+
+ form button:hover {
+     background-color: #f2691a;
+     transition: 0.4s;
+ }
+
+ hr {
+     margin-top: 5rem;
+     margin-bottom: 3rem;
+     
+ }
+
+ /*FOOTER*/
+ footer {
+    background-color: #F1F2F2;
+    margin-top: 4rem;
+ }
+ 
+ footer a {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+
+     margin-bottom: 2rem;
+     
+ }
+
+ footer a img {
+     width: 2rem;
+     padding: 0.8rem;
+     
+     background-color: #000;
+     clip-path: circle();
+
+     transition: 0.2s;
+ }
+
+ footer a img:hover {
+     background-color: #404040;
+ }
+
+ /*PADLOCK*/
+.admin-acess {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+    height: 1rem;
+    width: 100%;
+
+}
+
+ .admin-acess img {
+     width: 2rem;
+     height: 2rem;
+
+ }
+/*submit active*/
+
+.form-actived {
+    display: none;
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+    }
+   
+    form {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    input {
+        height: 3.5rem;
+        font-size: 2rem;
+    }
+
+    input::placeholder {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+
+    label {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+}
